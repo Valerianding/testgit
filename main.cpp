@@ -8,7 +8,7 @@ using namespace std;
 // n is size of heap
 void heapify(int arr[], int n, int i)
 {
-    int parent,child;
+    int parent,child1,child2,child;
     int temp = arr[i];
     for(parent = i; parent * 2 + 1 < n; parent = child){
         child  = parent * 2 + 1;
